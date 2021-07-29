@@ -41,7 +41,6 @@ let createSquares = (grid) => {
         square.classList.add("square")
         square.id = `${x}/${y}`
         square.addEventListener("click",squareClickHandler)
-        square.innerText = jsGrid[x][y]
         grid.append(square)
         if(y===8){
             y=0
