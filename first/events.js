@@ -6,6 +6,7 @@ let callback1 = (event)=>{
 
 
 let callback2 = event=> {
+     let listAdd = document.getElementById("list-add")
         let li = document.createElement("li")
         li.innerText = listAdd.value
         let ul = document.querySelector("ul")
@@ -23,7 +24,7 @@ window.addEventListener("DOMContentLoaded",()=> {
     alert("dom has loaded")
     let redInput = document.getElementById("red-input")
     let addItem = document.getElementById("add-item")
-    let listAdd = document.getElementById("list-add")
+
     let colorSelect = document.getElementById("color-select")
     let removeListeners = document.getElementById("remove-listeners")
     let addListeners = document.getElementById("add-listeners")
